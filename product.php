@@ -1,0 +1,228 @@
+
+<DOCTYPE html>
+	<html>
+		<head>
+			<title>
+				Products
+			</title>
+			<link rel="stylesheet" href="css/1.css">
+
+            <script>
+                var sum=0;
+                function CartAdd(name , price)
+                {
+                    sum=sum+price;
+                 alert(name +" purchased");
+
+                }
+
+                function finish()
+                {
+                    document.getElementById('final').innerHTML="Your total price of the items you have selected is <br>"+sum;
+                    final.style="color:green; text-align:center; font-size:30px; margin-top:5%; margin-bottom:5%"
+                    document.getElementById('final').scrollIntoView();
+                }
+
+
+
+            </script>
+		</head>
+		<body>
+			<header>
+				<nav>
+                    <a href="index.php">Home</a>
+					<a href="product.php" class="active">Products</a>
+					<a href="contact.php">Contact Us</a>
+
+				</nav>
+
+			</header>
+            <div style="background-color:406C47; margin-top:7%;">
+
+            <a class="logo" href="#"><img src="images/logo.gif"/></a>
+                </div>
+
+            <div id="final" style="text-align:center">
+
+            </div>
+
+            <h1 class="heading">Mobiles</h1>
+
+
+			<div class="container">
+
+				<div class="category">
+					  <a target="_blank">
+						<img src="images/mobile1.jpg" alt="VGOTEL V11" style="width:155;"></a>
+            <h1>VGOTEL V11</h1>
+            <p class="price">PKR 13,000</p>
+            <p>5.5 inches, Quad-Core 1.3Ghz, 2GB 32GB, 4G+WiFi</p>
+            <p><button class="AddToCartBtn" onclick="CartAdd('VGOTEL V11',13000)" >Add to Cart</button></p>
+				</div>
+
+
+				<div class="category">
+					<a target="_blank">
+						<img src="images/mobile2.jpg" alt="QMobile" style="width:167;">
+  				</a>
+
+                    <h1>Qmobile Q15i</h1>
+              <p class="price">PKR 8,000</p>
+              <p>5.0 inches, Dual-Core 1.3Ghz, 1GB 8GB, 3G+WiFi</p>
+              <p><button class="AddToCartBtn"  onclick="CartAdd('Qmobile Q15i',8000)" value="192">Add to Cart</button></p>
+
+				</div>
+				<div class="category">
+					<a target="_blank">
+						<img src="images/mobile3.jpg" alt="Honor 9" width="600" height="282">
+  				</a>
+
+                    <h1>Honor 9</h1>
+              <p class="price">PKR 50,000</p>
+              <p>6.4 inches sAMOLED, Octa-Core 2.37Ghz, 8GB 128GB, 4G+Dual-Band WiFi </p>
+              <p><button class="AddToCartBtn" onclick="CartAdd('Honor 9',50000)" >Add to Cart</button></p>
+
+				</div>
+
+
+
+
+          <div class="category" style="height:530">
+					<a target="_blank">
+						<img src="images/mobile5.jpg" alt="Samsung J6"   height="200" style="margin-bottom:70">
+  				</a>
+                    <h1>Samsung Galaxy J6</h1>
+              <p class="price">PKR 28,000</p>
+              <p>5.7 inches AMOLED, Octa-Core 2.0Ghz, 3GB 32GB, 4G+WiFi</p>
+              <p><button class="AddToCartBtn" onclick="CartAdd('Samsung J6',28000)" >Add to Cart</button></p>
+				</div>
+
+			</div>
+
+
+            <!--finish shopping button -->
+            <div style="text-align:center; margin-top:20px;margin-bottom:20px;">
+            <button class="AddToCartBtn" onclick="finish()" value="192">Finish Shoping</button>
+               </div>
+
+
+            <h1 class="heading">Cameras</h1>
+
+            	<div class="container">
+
+				<div class="category" style="height:530">
+
+					<a target="_blank">
+						<img src="images/cemera1.jpg" alt="Sony Camcorder VP-01" width="600" height="220" style="margin-bottom:70">
+  				</a>
+
+                    <h1>Sony Camcorder VP-01</h1>
+              <p class="price">PKR 109,000</p>
+              <p>1080p at 60fps, sRGB, Dual Pixel</p>
+              <p><button class="AddToCartBtn" onclick="CartAdd('Sony Camcorder VP-01',109000)" >Add to Cart</button></p>
+
+				</div>
+				<div class="category">
+					<a target="_blank">
+						<img src="images/cemera2.jpg" alt="Canon CX-54" width="600" height="300">
+  				</a>
+
+                    <h1>Canon CX-54</h1>
+              <p class="price">PKR 250,000</p>
+              <p>20 FPS, Burst Mode, 3-Axis OIS, 1000 pictures Capacity</p>
+              <p><button class="AddToCartBtn" onclick="CartAdd('Canon CX-54',250000)" >Add to Cart</button></p>
+
+				</div>
+				<div class="category">
+					<a target="_blank">
+						<img src="images/cemera3.jpg" alt="Sony WD-100D" width="600" height="280">
+  				</a>
+                    <h1>Sony WD-100D</h1>
+              <p class="price">PKR 215,000</p>
+              <p>18 FPS, Manual Focus + Burst Mode, 3-Axis OIS, 1250 pictures Capacity</p>
+              <p><button class="AddToCartBtn" onclick="CartAdd('Sony WD-100D',215000)" >Add to Cart</button></p>
+
+				</div>
+
+                <div class="category">
+					<a target="_blank">
+						<img src="images/cemera4.jpg" alt="Nikon N-500" width="600" height="280">
+  				</a>
+                    <h1>Nikon N-500</h1>
+              <p class="price">PKR 289,000</p>
+              <p>25 FPS, Manual Focus + Burst Mode, 3-Axis OIS + EIS, 1250 pictures Capacity</p>
+              <p><button class="AddToCartBtn" onclick="CartAdd('Nikon N-500',289000)" >Add to Cart</button></p>
+
+				</div>
+
+			</div>
+
+            <!--finish shopping button -->
+            <div style="text-align:center ;margin-top:20px;margin-bottom:20px;">
+            <button class="AddToCartBtn" onclick="finish()" value="192">Finish Shoping</button>
+               </div>
+
+               <h1 class="heading">Head Phones</h1>
+
+            <div class="container">
+
+				<div class="category">
+
+					<a target="_blank">
+						<img src="images/headphone2.jpg" alt="MPOW 2" width="600" height="300">
+  				</a>
+
+                    <h1>MPOW 2</h1>
+              <p class="price">PKR 3500</p>
+              <p>Wireless Headphnes, 13mm Drivers, IP6X, 12H Battery</p>
+              <p><button class="AddToCartBtn" onclick="CartAdd('MPOW 2',3500)" >Add to Cart</button></p>
+
+				</div>
+				<div class="category">
+					<a target="_blank">
+						<img src="images/headphone3.jpg" alt="Audionic B-5" width="600" height="280">
+  				</a>
+
+                    <h1>Audionic B-5</h1>
+              <p class="price">PKR 5500</p>
+              <p> Wireless + AUX Headphnes, 12.5mm Drivers, IP68, 10.5H Battery</p>
+              <p><button class="AddToCartBtn" onclick="CartAdd('Audionic B-5',5500)" >Add to Cart</button></p>
+
+				</div>
+				<div class="category">
+					<a target="_blank">
+						<img src="images/headphone.jpg" alt="Beats Pro II" width="600" height="300">
+  				</a>
+
+                    <h1>Beats Pro II</h1>
+              <p class="price">PKR 10000</p>
+              <p>Wireless Headphnes, 15mm Drivers, IP68, 15H Battery</p>
+              <p><button class="AddToCartBtn" onclick="CartAdd('Beats Pro II',10000)" >Add to Cart</button></p>
+
+				</div>
+
+                <div class="category">
+					<a target="_blank">
+						<img src="images/headphone4.jpg" alt="A4Tech A-44" width="600" height="300">
+  				</a>
+                    <h1>A4Tech A-44</h1>
+              <p class="price">PKR 4500</p>
+              <p>Wired USB + AUX Headphnes, 9mm Drivers, IP58, No Battery</p>
+              <p><button class="AddToCartBtn" onclick="CartAdd('A4Tech A-44',4500)" >Add to Cart</button></p>
+
+				</div>
+
+			</div>
+            <!--finish shopping button -->
+            <div style="text-align:center; margin-top:20px;margin-bottom:20px;">
+            <button class="AddToCartBtn" onclick="finish()" value="192">Finish Shoping</button>
+               </div>
+
+
+			<footer>
+					© Copyright 2021 JustBuyIt. All Rights Reserved
+			</footer>
+		</body>
+
+	</html>
+</DOCTYPE>
